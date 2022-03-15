@@ -1,6 +1,6 @@
 <p>Teams</p>
 <div class="row">
-    <div *ngFor="let team of teams">
+    <div *ngFor="let team of storeService.teams">
         <div class="card" style="width: 15rem">
           <div class="card-body">
             <h5 class="card-title"><a routerLink="/teams/{{team.id}}">{{team.name}}</a></h5>
